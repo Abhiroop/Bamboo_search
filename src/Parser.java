@@ -57,8 +57,10 @@ public class Parser
 		File file2 = new File("/home/miserysignals/kaam/link_text.txt");
 		Writer output2 = new BufferedWriter(new FileWriter(file2));
 				
-		Element content = doc.getElementById("content");
-		Elements links = content.getElementsByTag("a");
+		//Element content = doc.getElementById("content");
+		//Elements links = content.getElementsByTag("a");
+		Elements links = doc.select("a[href]");
+		
 		for (Element link : links) 
 		{
 		  String linkHref = link.attr("href");
@@ -72,7 +74,6 @@ public class Parser
 		output1.close();
 		output2.close();
 		                  
-		
 		}
 		catch(Exception e)
 		{

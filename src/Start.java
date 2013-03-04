@@ -14,7 +14,7 @@ public class Start {
            proxyPassword = "starwars";
  
         // Open URL ...
-        URL url = new URL("http://www.sourceforge.net");
+        URL url = new URL("http://databases.about.com/");
  
         URLConnection con = url.openConnection();
         

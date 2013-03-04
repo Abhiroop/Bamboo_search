@@ -7,6 +7,8 @@ public class Begin
 		x.accept();
 		Parser y=new Parser();
 		y.remove_tags();
+		Categorizer z=new Categorizer();
+		z.Category();
 			
 	}
 }
