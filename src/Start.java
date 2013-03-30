@@ -27,7 +27,7 @@ public class Start {
  
         // Read it ...
         String inputLine;
-        PrintWriter out = new PrintWriter(new FileWriter("/home/miserysignals/kaam/output.txt"), true);
+        PrintWriter out = new PrintWriter(new FileWriter("/home/abhiroop/Java_Workspace/Bamboo_Search/output.txt"), true);
         while ((inputLine = in.readLine()) != null)
         {
           out.append(inputLine);

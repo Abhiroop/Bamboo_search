@@ -10,7 +10,7 @@ public class Parser
 {
 	public void remove_tags() throws Exception
 	{
-		String fileName="/home/miserysignals/kaam/output.txt";
+		String fileName="/home/abhiroop/Java_Workspace/Bamboo_Search/output.txt";
 		BufferedReader reader = new BufferedReader( new FileReader(fileName) );
 		String line = reader.readLine();
 		StringBuffer html=new StringBuffer();
@@ -42,7 +42,7 @@ public class Parser
 		
 		//Extract text from the webpage
 		String noHTMLString=Jsoup.parse(html.toString()).text();
-		File file = new File("/home/miserysignals/kaam/write.txt");
+		File file = new File("/home/abhiroop/Java_Workspace/Bamboo_Search/write.txt");
 		Writer output = new BufferedWriter(new FileWriter(file));
 		output.write(noHTMLString);
 		output.close();
@@ -51,10 +51,10 @@ public class Parser
 		//extract hyperlinks from the webpage		
 		try
 		{
-		File file1 = new File("/home/miserysignals/kaam/link.txt");
+		File file1 = new File("/home/abhiroop/Java_Workspace/Bamboo_Search/link.txt");
 		Writer output1 = new BufferedWriter(new FileWriter(file1));
 		
-		File file2 = new File("/home/miserysignals/kaam/link_text.txt");
+		File file2 = new File("/home/abhiroop/Java_Workspace/Bamboo_Search/link_text.txt");
 		Writer output2 = new BufferedWriter(new FileWriter(file2));
 				
 		//Element content = doc.getElementById("content");
