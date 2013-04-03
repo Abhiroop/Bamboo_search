@@ -79,7 +79,7 @@ public class Parser
 		{
 			System.out.println("No hyper-links");
 		}
-
+		reader.close();
 	}
 
 }

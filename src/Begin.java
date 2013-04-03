@@ -7,6 +7,10 @@ public class Begin
 		x.accept();
 		Parser y=new Parser();
 		y.remove_tags();
+		StopWordRemoval a=new StopWordRemoval();
+		a.modify();
+		Indexer z=new Indexer();
+		z.word_count();
 					
 	}
 }

@@ -14,7 +14,7 @@ public class Start {
            proxyPassword = "starwars";
  
         // Open URL ...
-        URL url = new URL("http://databases.about.com/");
+        URL url = new URL("http://timesofindia.indiatimes.com/sports/cricket/ipl/news/Kolkata-Knight-Riders-begin-with-a-bang/articleshow/19369930.cms");
  
         URLConnection con = url.openConnection();
         
