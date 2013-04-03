@@ -1,0 +1,16 @@
+import re,string
+stop_sent=open("stopwords_en.txt").read()
+stop_words=stop_sent.split('\n')
+text=open("hello.txt").read()
+text=text.lower()
+feed=text.translate(None, string.punctuation)
+word=feed.split(' ')
+line=''
+for i in range(len(word)):
+	if word[i] in stop_words:
+		pass
+	else:
+		line=line+word[i]+' '
+text_file = open("Output.txt", "w")
+text_file.write("%s"%line)
+text_file.close()
